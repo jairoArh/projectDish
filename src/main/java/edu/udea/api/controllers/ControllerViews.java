@@ -57,7 +57,7 @@ public class ControllerViews {
 
     @GetMapping("/dishes")
     public String dishes(Model model){
-        model.addAttribute("title","Gestión de Platos");
+        model.addAttribute("title","Administrar Platos");
         model.addAttribute("dishes",dishService.getAllDishes());
 
         return "dishes";
