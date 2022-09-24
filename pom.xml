@@ -89,7 +89,7 @@
 						<configuration>
 							<additionalProperties>
 								<encoding.source>${project.build.sourceEncoding}</encoding.source>
-								<encoding.report>${project.reporting.outputEncoding}</encoding.report>
+								<encoding.reporting>${project.reporting.outputEncoding}</encoding.reporting>
 								<java.source>${maven.compiler.source}</java.source>
 								<java.target>${maven.compiler.target}</java.target>
 							</additionalProperties>
