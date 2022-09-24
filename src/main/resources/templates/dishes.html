@@ -14,19 +14,20 @@
                 <h1 th:text="${title}">xdxdxdxd</h1>
             </div>
             <div class="card-body">
-                <table class="table">
-                    <theader>
-                        <tr>
-                            <th>id Plato</th>
-                            <th>Nombre Plato</th>
-                            <th>Valor</th>
-                            <th>Calorias</th>
-                            <th>Vegetariano</th>
-                            <th>Tipo de Plato</th>
-                            <th>Gestión</th>
-                        </tr>
-                    </theader>
-                    <tbody>
+                <div class="table-responsive">
+                    <table class="table">
+                        <theader>
+                            <tr>
+                                <th>id Plato</th>
+                                <th>Nombre Plato</th>
+                                <th>Valor</th>
+                                <th>Calorias</th>
+                                <th>Vegetariano</th>
+                                <th>Tipo de Plato</th>
+                                <th>Gestión</th>
+                            </tr>
+                        </theader>
+                        <tbody>
                         <tr th:each="dish : ${dishes}">
                             <td th:text="${dish.id}"></td>
                             <td th:text="${dish.name}"></td>
@@ -59,9 +60,9 @@
                                 <a class="btn btn-secondary" th:href="@{/views/{id}(id=${dish.id})}">Actualizar</a>
                             </td>
                         </tr>
-                    </tbody>
-                </table>
-                
+                        </tbody>
+                    </table>
+                </div>
                 <a class="btn btn-primary" href="/views/showForm">Crear Nuevo Plato</a>
             </div>
         </div>
